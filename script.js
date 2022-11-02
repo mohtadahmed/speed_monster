@@ -107,7 +107,12 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
+    if(count){
+      countdownOverlay.innerHTML = `<h1>${count}</h1>`;
+    }
+    else if (count == 0){
+      countdownOverlay.innerHTML = `<h1>Let's Start Typing</h1>`;
+    }
 
     // finished timer
     if (count < 0) {
