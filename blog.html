@@ -7,15 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | Speed Monster</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/6d07efe875.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1 style="color: white;">This is the blog page</h1>
+    <header class="blog-header-container">
+        <h1>Blogs</h1>
     </header>
+
+    <main class="main-container">
+        <section class="blog-card-section">
+            <h2 class="blog-title"><i class="fa-solid fa-screwdriver-wrench icon"></i>What are the differences between Local Storage and Session Storage?</h2>
+            <div>
+                <p><i class="fa-solid fa-terminal icon"></i>
+                    <b>Local Storage</b> is a type of web storage that allows JavaScript to store and access data right in the browser. This is especially useful for storing data that you want to persist even if the user closes the browser, such as preferences or settings.</p>
+                <p>
+                    <b>Session Storage</b> is a type of web storage that allows web applications to store data locally within the user's browser. Unlike cookies, data stored in session storage is specific to the site on which it was created and data is not shared with other sites.
+                </p>
+                <p>
+                    <li>Their main difference is that local storage data does not expire, whereas session storage data gets cleared when the user closes its browser window.</li>
+                    <li>sessions are valid for only one tab at a time. So, if a user has three tabs open, each one will have its own page session.</li>
+                    <li>Since local storage is not session-based, all the data must be deleted via javascript or manually.</li>
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
