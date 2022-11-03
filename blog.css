@@ -24,6 +24,7 @@ body{
 .blog-card-section{
     border: 1px solid wheat;
     padding: 10px 20px;
+    margin: 20px 0;
 }
 
 .icon{

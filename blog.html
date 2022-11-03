@@ -36,6 +36,24 @@
                 </p>
             </div>
         </section>
+
+        <section class="blog-card-section">
+            <h2 class="blog-title"><i class="fa-solid fa-screwdriver-wrench icon"></i>What are the differences between Global Scope and Block Scope?</h2>
+            <div>
+                <p><i class="fa-solid fa-terminal icon"></i>
+                    <b>Global Scope</b>: A variable exists inside or outside a block. If a variable is declared outside all functions or curly braces ({}), it exists in the global scope. The global variables can be accessed by any line of code in the program, including inside blocks. <br>
+                    <b>Block Scope</b>: A block scope is the area within if, switch conditions or for and while loops. Generally speaking, whenever you see {curly brackets}, it is a block. In ES6, const and let keywords allow developers to declare variables in the block scope, which means those variables exist only within the corresponding block.
+                </p>
+                <p>
+                    <h4>Block Scope:</h4>
+                    In ES6, a new way to declare variable is introduced -- const and let. Before ES6, developers use var to declare different variables. 
+                    <li>const: const is used when you don't want to reassign the variable. It stays constant once it's declared. As a result, const is always a default option for me if I don't need to reassign the variable. In this way, we can also avoid the case when we occasionally declare the same variable name in other files.</li>
+                    <li>let: When it comes to the situation I need to reassign a variable, let is more welcome than var after ES6. The reason is that let is in block scope which means it only exists within its own scope</li>
+                    <h4>Global Scope:</h4>
+                    <li>var: var is an old way to declare variable in javaScript and it's now the weakest keyword to define a variable. The variable declared by var may or may not be reassigned and because it is in function scope, the variable may or may not be used for entire function. If the variable is reassigned accidentally within a for loop (block scope), then that's when things can easily go wrong. People can overwrite the parent assignments in this case. </li>
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 
