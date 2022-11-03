@@ -54,6 +54,24 @@
                 </p>
             </div>
         </section>
+
+        <section class="blog-card-section">
+            <h2 class="blog-title"><i class="fa-solid fa-screwdriver-wrench icon"></i>How an Event Loop works in JavaScript?</h2>
+            <div>
+                <p><i class="fa-solid fa-terminal icon"></i>
+                    <b>The event Loop: </b> JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java. <br>
+                    JavaScript is a single-threaded programming language. This means that JavaScript can do only one thing at a single point in time.
+
+                    The JavaScript engine executes a script from the top of the file and works its way down. It creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase.
+
+                    If a function takes a long time to execute, you cannot interact with the web browser during the function's execution because the page hangs.
+
+                    A function that takes a long time to complete is called a blocking function. Technically, a blocking function blocks all the interactions on the webpage, such as mouse click. In that time we can wait for the task to complete. A very interesting property of the event loop model is that JavaScript, unlike a lot of other languages, never blocks
+
+                    The event loop is the secret by which JavaScript gives us an illusion of being multithreaded even though it is single-threaded.
+                </p>
+            </div>
+        </section>
     </main>
 </body>
 
